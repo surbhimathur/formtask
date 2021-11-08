@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   
+    <div class="container">
+        <form id="myform">
+            <fieldset>
+                <label for="firstname">Firstname:</label>
+                <input type="text" id="firstname" placeholder="Enter firstname" name="firstname" required><br>
+                <label for="lastname">Lastname:</label>
+                <input type="text" id="lastname" placeholder="Enter lastname" name="lastname"required><br>
+                <label for="address">Address:</label>
+                <textarea id="address" placeholder="Enter address" name="address"required></textarea><br>
+                <label for="pincode">Pincode:</label>
+                <input type="text" id="pincode" placeholder="Enter pincode" name="pincode" maxlength=6 required><span id="numloc"></span><br>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male">Male
+                <input type="radio" id="female" name="gender" value="Female">Female<br>
+                <label for="food">Favorite Food:</label>
+                <input type="checkbox"  id="cake" value="cake">Cake 
+                <input type="checkbox"  id="pasta" value="pasta">Pasta 
+                <input type="checkbox"  id="pizza" value="pizza">Pizza 
+                <input type="checkbox"  id="cookies" value="cookies">Cookies 
+                <input type="checkbox"  id="ice-cream" value="ice-cream">Ice-cream <br>
+                
+                <label for="state">State:</label>
+                <input type="text" id="state" placeholder="Enter state" name="state" required><br>
+                <label for="country">Country:</label>
+                <input type="text" id="country" placeholder="Enter country" name="country" required><br>
+                <input type="button" id="submit" value="Submit" onclick="display()">
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="container table">
+        <table>
+                <tbody>
+                    <tr>
+                    <th >First Name</th>
+                    <th >Last Name</th>
+                    <th >Address</th>
+                    <th >Pincode</th>
+                    <th >Gender</th>
+                    <th >Food</th>
+                    <th >State</th>
+                    <th >Country</th>
+                </tr>
+                <tr>
+                    <td  id="fname"></td>
+                    <td  id="lname"></td>
+                    <td  id="add"></td>
+                    <td  id="pin"></td>
+                    <td  id="gen"></td>
+                    <td  id="foo"></td>
+                    <td  id="sta"></td>
+                    <td  id="coun"></td>
+                     
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
